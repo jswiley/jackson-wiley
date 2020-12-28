@@ -4,78 +4,115 @@
         <title>Jackson Wiley</title>
         <meta charset="UTF-8" />
         <meta name='viewport' content="width=device-width, intitial-scale=1.0" />
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     </head>
     <body id="top">
-        <header>
-            <a href="#top">Jackson Wiley</a>
+        <header class="fixed w-full bg-blue-600 bg-opacity-75 text-white md:flex md:justify-between">
+            <a class="font-bold block px-8 py-4 hover:bg-white hover:text-blue-500" href="#top">Jackson Wiley</a>
             <nav>
-                <ul>
+                <ul class="md: flex">
                     <li>
-                        <a href="#hero">Hero</a>
+                        <a class="block px-8 py-4 hover:bg-white hover:text-blue-500" href="#intro">Intro</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#tech-support">Tech support</a>
+                        <a class="block px-8 py-4 hover:bg-white hover:text-blue-500" href="#interests">Hobbies and Interests</a>
                     </li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section id="hero">
-                <p>It's Jackson from</p>
-                <h1>Spartanburg</h1>
-                <p>Connected Vehicles</p>
+            <section id="intro" class="h-screen bg-gray-900 text-white grid p-20 gap-40 grid-cols-2">
+               <div>
+                    <p class="text-3xl font-bold tracking-wider text-blue-500">Hello World!</p>
+                    <h1 class="font-bold text-white text-4xl leading-none">My name is Jackson Wiley</h1>
+                    <p class="mt-1 text-3xl font-bold tracking-wider text-blue-500">I am from Spartanburg, SC</p>
+                    <ul class="border-2 border-blue-500 mt-4 bg-blue-200 rounded divide-y divide-gray-700 divide-opacity-25 text-black">
+                        <li class="px-4 py-2 font-bold flex">
+                                    I plan on
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                                   
+                        </li>
+                        <li class="px-4 py-2 flex">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                                 Majoring in Mechanical Engineering
+                        </li>
+                        <li class="px-4 py-2 flex">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                                 Minoring in Computer Science and Economics
+                        </li>
+                        <li class="px-4 py-2 flex">
+                             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                                    Researching/Interning throughout my time at Clemson
+                        </li>
+                    </ul>  
+                        
+                    
+                        <a
+                        href="https://www.linkedin.com/in/jackson-wiley-960a0a202/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        class="border-2 border-blue-500 mt-10 bg-blue-200 rounded-lg px-8 py-4 text-black inline-block"
+                    >Connect to me via Linkedin! </a>
+               </div>
+               <div>
+
+               
+                   
+                    <img src="me.jpg" class=" w-80 h-124 rounded-lg border-2 border-blue-500"/>
+                   
+                    
+                </div>
             </section>
 
-            <section id="about">
-                <h2>About</h2>
-                <ul>
-                    <li>
-                        <img src="spacex.jpg"/>
-                        <h3>Rocketry</h3>
-                        <p>I am an active member in the Clemson Rocket Engineering Club. I support both the payload team for the Argonia competition and the flight dynamics team for the IREC competetion</p>
+            <section id="interests" class="bg-blue-200 pt-10">
+                <h2 class="text-center text-xl font-bold text-gray-900">Hobbies and Interests</h2>
+                <ul class="grid p-10 gap-10 grid-cols-3">
+                    <li class="bg-white shadow rounded-lg overflow-hidden hover:bg-gray-200">
+                        <img src="spacex.jpg" class="w-full" />
+                        <div class="p-4">
+                            <h3 class="text-center font-bold">Rocketry</h3>
+                            <p class="text-center">I am an active member in the Clemson Rocket Engineering Club. I support both the payload team for the Argonia competition and the flight dynamics team for the IREC competetion.</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="planes.jpg"/>
-                        <h3>Flight</h3>
-                        <p>I am currently working towards by student pilot certification. I enjoy the thought of having no earthly bound.</p>
+                    <li class="bg-white shadow rounded-lg overflow-hidden hover:bg-gray-200">
+                        <img src="planes.jpg" class="w-full" />
+                        <div class="p-4">
+                            <h3 class="text-center font-bold">Flight</h3>
+                            <p class="text-center">I am currently working towards my student pilot certification. I enjoy the thought of having no earthly bound.</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="drums.jpg"/>
-                        <h3>Music</h3>
-                        <p>I enjoy playing the drums and the guitar in my freetime. My favorite bands are Led Zeppelin, The Beatles, and Pink Floyd.</p>
+                    <li class="bg-white shadow rounded-lg overflow-hidden hover:bg-gray-200">
+                        <img src="drums.jpg" class="w-full" />
+                       <div class="p-4">
+                            <h3 class="text-center font-bold">Music</h3>
+                            <p class="text-center">I enjoy playing the drums and the guitar in my freetime. My favorite bands are Led Zeppelin, The Beatles, and Pink Floyd.</p>
+                       </div>
                     </li>
                 </ul>
             </section>
 
-            <section id="tech-support">
-                <h2>Tech support</h2>
-                <ul>
-                    <li>
-                        <img src="pinecone.jpg"/>
-                        <h3>Jackson Wiley</h3>
-                        <p>Spartanburg, SC</p>
-                    </li>
-                    <li>
-                        <img src="pinecone.jpg" />
-                        <h3>Scott Wiley</h3>
-                        <p>Spartanburg, SC</p>
-                    </li>
-                    <li>
-                        <img src="pinecone.jpg"/>
-                        <h3>Emily</h3>
-                        <p>Greenville, SC</p>
-                    </li>
-                </ul>
-
-            </section>
         </main>
 
-        <footer>
-            copyright 2020 Jackson Wiley. All rights reserved.
+        <footer class="text-white bg-gray-800 p-10 italic text-center">
+            © 2020 Jackson Wiley. All rights reserved.
+            <p>
+                <a 
+                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=PLahKLy8pQdCM0SiXNn3EfGIXX19QGzUG3"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    class="hover:text-green-400"
+                    >Click here for free Bitcoin
+                </a>
+            </p>
         </footer>
     </body>
 </html>
