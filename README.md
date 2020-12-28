@@ -1,3 +1,3 @@
 # First webpage
 
-Demo webpage project.
+Icebreaker webpage project.
